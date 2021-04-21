@@ -1,0 +1,21 @@
+ALGORITHM algorithm_name
+VAR
+    number_char : INTEGER :=0
+    c:char:=''
+    number_words :INTEGER :=0
+    number_vow :INTEGER :=0   
+BEGIN
+    while(c <> '.') DO
+      read(c)
+      number_char := number_char+1
+      if (c ='') THEN
+      number_words := number_words +1
+      if(c='a' or 'e' or 'i' or 'y') THEN
+      number_vow = number_vow +1
+    END_WHILE
+    write('number of words is ' number_words+1)
+    write('number of char is ' number_char)
+    write('number of vowels is ' number_vow)
+
+END
+   
